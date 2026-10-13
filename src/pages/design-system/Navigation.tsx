@@ -29,7 +29,7 @@ function GridSystem() {
     }
 
 
-    const BtnNav = ({ btnLabel, active }) => {
+    const BtnNav = ({ btnLabel, active }: { btnLabel: string; active?: boolean }) => {
 
         const [isHover, setIsHover] = useState(false);
         const [isMouseDown, setIsMouseDown] = useState(false);

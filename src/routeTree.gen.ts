@@ -9,67 +9,57 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as TypographiesServicesRouteImport } from './routes/typographies-services'
-import { Route as TypographiesRouteImport } from './routes/typographies'
-import { Route as SignatureMailRouteImport } from './routes/signature-mail'
-import { Route as ReseauxSociauxRouteImport } from './routes/reseaux-sociaux'
-import { Route as PhotographieRouteImport } from './routes/photographie'
-import { Route as PapeterieRouteImport } from './routes/papeterie'
-import { Route as NavigationDesignSystemRouteImport } from './routes/navigation-design-system'
-import { Route as LogotypeServicesRouteImport } from './routes/logotype-services'
-import { Route as LogotypeRouteImport } from './routes/logotype'
-import { Route as IntroductionDesignSystemRouteImport } from './routes/introduction-design-system'
-import { Route as IconesDesignSystemRouteImport } from './routes/icones-design-system'
-import { Route as GridSystemRouteImport } from './routes/grid-system'
-import { Route as CouleursServicesRouteImport } from './routes/couleurs-services'
-import { Route as CouleursDesignSystemRouteImport } from './routes/couleurs-design-system'
-import { Route as CouleursRouteImport } from './routes/couleurs'
-import { Route as BoutonsRouteImport } from './routes/boutons'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as BoutonsRouteImport } from './routes/boutons'
+import { Route as CouleursRouteImport } from './routes/couleurs'
+import { Route as CouleursDesignSystemRouteImport } from './routes/couleurs-design-system'
+import { Route as CouleursServicesRouteImport } from './routes/couleurs-services'
+import { Route as GridSystemRouteImport } from './routes/grid-system'
+import { Route as IconesDesignSystemRouteImport } from './routes/icones-design-system'
+import { Route as IntroductionDesignSystemRouteImport } from './routes/introduction-design-system'
+import { Route as LogotypeRouteImport } from './routes/logotype'
+import { Route as LogotypeServicesRouteImport } from './routes/logotype-services'
+import { Route as NavigationDesignSystemRouteImport } from './routes/navigation-design-system'
+import { Route as PapeterieRouteImport } from './routes/papeterie'
+import { Route as PhotographieRouteImport } from './routes/photographie'
+import { Route as ReseauxSociauxRouteImport } from './routes/reseaux-sociaux'
+import { Route as SignatureMailRouteImport } from './routes/signature-mail'
+import { Route as TypographiesRouteImport } from './routes/typographies'
+import { Route as TypographiesServicesRouteImport } from './routes/typographies-services'
 
-const TypographiesServicesRoute = TypographiesServicesRouteImport.update({
-  id: '/typographies-services',
-  path: '/typographies-services',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const TypographiesRoute = TypographiesRouteImport.update({
-  id: '/typographies',
-  path: '/typographies',
+const BoutonsRoute = BoutonsRouteImport.update({
+  id: '/boutons',
+  path: '/boutons',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SignatureMailRoute = SignatureMailRouteImport.update({
-  id: '/signature-mail',
-  path: '/signature-mail',
+const CouleursRoute = CouleursRouteImport.update({
+  id: '/couleurs',
+  path: '/couleurs',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ReseauxSociauxRoute = ReseauxSociauxRouteImport.update({
-  id: '/reseaux-sociaux',
-  path: '/reseaux-sociaux',
+const CouleursDesignSystemRoute = CouleursDesignSystemRouteImport.update({
+  id: '/couleurs-design-system',
+  path: '/couleurs-design-system',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PhotographieRoute = PhotographieRouteImport.update({
-  id: '/photographie',
-  path: '/photographie',
+const CouleursServicesRoute = CouleursServicesRouteImport.update({
+  id: '/couleurs-services',
+  path: '/couleurs-services',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PapeterieRoute = PapeterieRouteImport.update({
-  id: '/papeterie',
-  path: '/papeterie',
+const GridSystemRoute = GridSystemRouteImport.update({
+  id: '/grid-system',
+  path: '/grid-system',
   getParentRoute: () => rootRouteImport,
 } as any)
-const NavigationDesignSystemRoute = NavigationDesignSystemRouteImport.update({
-  id: '/navigation-design-system',
-  path: '/navigation-design-system',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const LogotypeServicesRoute = LogotypeServicesRouteImport.update({
-  id: '/logotype-services',
-  path: '/logotype-services',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const LogotypeRoute = LogotypeRouteImport.update({
-  id: '/logotype',
-  path: '/logotype',
+const IconesDesignSystemRoute = IconesDesignSystemRouteImport.update({
+  id: '/icones-design-system',
+  path: '/icones-design-system',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IntroductionDesignSystemRoute =
@@ -78,39 +68,49 @@ const IntroductionDesignSystemRoute =
     path: '/introduction-design-system',
     getParentRoute: () => rootRouteImport,
   } as any)
-const IconesDesignSystemRoute = IconesDesignSystemRouteImport.update({
-  id: '/icones-design-system',
-  path: '/icones-design-system',
+const LogotypeRoute = LogotypeRouteImport.update({
+  id: '/logotype',
+  path: '/logotype',
   getParentRoute: () => rootRouteImport,
 } as any)
-const GridSystemRoute = GridSystemRouteImport.update({
-  id: '/grid-system',
-  path: '/grid-system',
+const LogotypeServicesRoute = LogotypeServicesRouteImport.update({
+  id: '/logotype-services',
+  path: '/logotype-services',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CouleursServicesRoute = CouleursServicesRouteImport.update({
-  id: '/couleurs-services',
-  path: '/couleurs-services',
+const NavigationDesignSystemRoute = NavigationDesignSystemRouteImport.update({
+  id: '/navigation-design-system',
+  path: '/navigation-design-system',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CouleursDesignSystemRoute = CouleursDesignSystemRouteImport.update({
-  id: '/couleurs-design-system',
-  path: '/couleurs-design-system',
+const PapeterieRoute = PapeterieRouteImport.update({
+  id: '/papeterie',
+  path: '/papeterie',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CouleursRoute = CouleursRouteImport.update({
-  id: '/couleurs',
-  path: '/couleurs',
+const PhotographieRoute = PhotographieRouteImport.update({
+  id: '/photographie',
+  path: '/photographie',
   getParentRoute: () => rootRouteImport,
 } as any)
-const BoutonsRoute = BoutonsRouteImport.update({
-  id: '/boutons',
-  path: '/boutons',
+const ReseauxSociauxRoute = ReseauxSociauxRouteImport.update({
+  id: '/reseaux-sociaux',
+  path: '/reseaux-sociaux',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const SignatureMailRoute = SignatureMailRouteImport.update({
+  id: '/signature-mail',
+  path: '/signature-mail',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TypographiesRoute = TypographiesRouteImport.update({
+  id: '/typographies',
+  path: '/typographies',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TypographiesServicesRoute = TypographiesServicesRouteImport.update({
+  id: '/typographies-services',
+  path: '/typographies-services',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -254,109 +254,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/typographies-services': {
-      id: '/typographies-services'
-      path: '/typographies-services'
-      fullPath: '/typographies-services'
-      preLoaderRoute: typeof TypographiesServicesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/typographies': {
-      id: '/typographies'
-      path: '/typographies'
-      fullPath: '/typographies'
-      preLoaderRoute: typeof TypographiesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/signature-mail': {
-      id: '/signature-mail'
-      path: '/signature-mail'
-      fullPath: '/signature-mail'
-      preLoaderRoute: typeof SignatureMailRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/reseaux-sociaux': {
-      id: '/reseaux-sociaux'
-      path: '/reseaux-sociaux'
-      fullPath: '/reseaux-sociaux'
-      preLoaderRoute: typeof ReseauxSociauxRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/photographie': {
-      id: '/photographie'
-      path: '/photographie'
-      fullPath: '/photographie'
-      preLoaderRoute: typeof PhotographieRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/papeterie': {
-      id: '/papeterie'
-      path: '/papeterie'
-      fullPath: '/papeterie'
-      preLoaderRoute: typeof PapeterieRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/navigation-design-system': {
-      id: '/navigation-design-system'
-      path: '/navigation-design-system'
-      fullPath: '/navigation-design-system'
-      preLoaderRoute: typeof NavigationDesignSystemRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/logotype-services': {
-      id: '/logotype-services'
-      path: '/logotype-services'
-      fullPath: '/logotype-services'
-      preLoaderRoute: typeof LogotypeServicesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/logotype': {
-      id: '/logotype'
-      path: '/logotype'
-      fullPath: '/logotype'
-      preLoaderRoute: typeof LogotypeRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/introduction-design-system': {
-      id: '/introduction-design-system'
-      path: '/introduction-design-system'
-      fullPath: '/introduction-design-system'
-      preLoaderRoute: typeof IntroductionDesignSystemRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/icones-design-system': {
-      id: '/icones-design-system'
-      path: '/icones-design-system'
-      fullPath: '/icones-design-system'
-      preLoaderRoute: typeof IconesDesignSystemRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/grid-system': {
-      id: '/grid-system'
-      path: '/grid-system'
-      fullPath: '/grid-system'
-      preLoaderRoute: typeof GridSystemRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/couleurs-services': {
-      id: '/couleurs-services'
-      path: '/couleurs-services'
-      fullPath: '/couleurs-services'
-      preLoaderRoute: typeof CouleursServicesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/couleurs-design-system': {
-      id: '/couleurs-design-system'
-      path: '/couleurs-design-system'
-      fullPath: '/couleurs-design-system'
-      preLoaderRoute: typeof CouleursDesignSystemRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/couleurs': {
-      id: '/couleurs'
-      path: '/couleurs'
-      fullPath: '/couleurs'
-      preLoaderRoute: typeof CouleursRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/boutons': {
@@ -366,11 +268,109 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BoutonsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/couleurs': {
+      id: '/couleurs'
+      path: '/couleurs'
+      fullPath: '/couleurs'
+      preLoaderRoute: typeof CouleursRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/couleurs-design-system': {
+      id: '/couleurs-design-system'
+      path: '/couleurs-design-system'
+      fullPath: '/couleurs-design-system'
+      preLoaderRoute: typeof CouleursDesignSystemRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/couleurs-services': {
+      id: '/couleurs-services'
+      path: '/couleurs-services'
+      fullPath: '/couleurs-services'
+      preLoaderRoute: typeof CouleursServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/grid-system': {
+      id: '/grid-system'
+      path: '/grid-system'
+      fullPath: '/grid-system'
+      preLoaderRoute: typeof GridSystemRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/icones-design-system': {
+      id: '/icones-design-system'
+      path: '/icones-design-system'
+      fullPath: '/icones-design-system'
+      preLoaderRoute: typeof IconesDesignSystemRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/introduction-design-system': {
+      id: '/introduction-design-system'
+      path: '/introduction-design-system'
+      fullPath: '/introduction-design-system'
+      preLoaderRoute: typeof IntroductionDesignSystemRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/logotype': {
+      id: '/logotype'
+      path: '/logotype'
+      fullPath: '/logotype'
+      preLoaderRoute: typeof LogotypeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/logotype-services': {
+      id: '/logotype-services'
+      path: '/logotype-services'
+      fullPath: '/logotype-services'
+      preLoaderRoute: typeof LogotypeServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/navigation-design-system': {
+      id: '/navigation-design-system'
+      path: '/navigation-design-system'
+      fullPath: '/navigation-design-system'
+      preLoaderRoute: typeof NavigationDesignSystemRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/papeterie': {
+      id: '/papeterie'
+      path: '/papeterie'
+      fullPath: '/papeterie'
+      preLoaderRoute: typeof PapeterieRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/photographie': {
+      id: '/photographie'
+      path: '/photographie'
+      fullPath: '/photographie'
+      preLoaderRoute: typeof PhotographieRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reseaux-sociaux': {
+      id: '/reseaux-sociaux'
+      path: '/reseaux-sociaux'
+      fullPath: '/reseaux-sociaux'
+      preLoaderRoute: typeof ReseauxSociauxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/signature-mail': {
+      id: '/signature-mail'
+      path: '/signature-mail'
+      fullPath: '/signature-mail'
+      preLoaderRoute: typeof SignatureMailRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/typographies': {
+      id: '/typographies'
+      path: '/typographies'
+      fullPath: '/typographies'
+      preLoaderRoute: typeof TypographiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/typographies-services': {
+      id: '/typographies-services'
+      path: '/typographies-services'
+      fullPath: '/typographies-services'
+      preLoaderRoute: typeof TypographiesServicesRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
