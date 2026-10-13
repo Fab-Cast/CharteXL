@@ -1,0 +1,6 @@
+import { createFileRoute } from '@tanstack/react-router'
+import Photographie from '../pages/xl-brand/Photographie'
+
+export const Route = createFileRoute('/photographie')({
+  component: Photographie,
+})
