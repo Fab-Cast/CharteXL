@@ -102,16 +102,15 @@ function RootComponent() {
                 <div className="px-3 py-0 vh-100 overflow-auto bg-dark left-nav">
                     <img src={charteLogo} alt="Btn construction" className="ms-3 mb-3 mt-5" style={{ height: '30px' }} />
                     <ul className="nav flex-column">
-                        {options.map((option) => {
+                        {options.map((option, i) => {
                             return (
-                                <>
+                                <div key={i}>
                                     {option.title ?
                                         <li className="mt-5 ms-3 mb-2"><span className="text-gray-400 small text-uppercase">{option.title}</span></li>
                                         :
                                         <li className="nav-item">
                                             <Link
                                                 {...option}
-                                                key={option.to}
                                                 className="px-3 nav-link w-100 text-light text-start rounded bg-gray-950 "
                                                 activeProps={{
                                                     className: 'bg-white text-dark',
@@ -121,7 +120,7 @@ function RootComponent() {
                                             </Link>
                                         </li>
                                     }
-                                </>
+                                </div>
                             )
                         })}
                     </ul>
