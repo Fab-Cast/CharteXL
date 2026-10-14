@@ -6,7 +6,7 @@ function Index() {
     return (
         <div className="row">
             <div className="col-4 offset-4 vh-100 d-flex flex-column justify-content-center">
-                <h4>Introduction</h4>
+                <h4>Introduction TEST</h4>
                 <p className="lead mb-5">Ce document est présenté en trois parties distinctes. Une partie charte graphique, une partie services et une partie design system.</p>
                 <h6>La charte graphique</h6>
                 <p>Cette charte graphique est le document qui contient l'ensemble des règles liées la marque XL Prog et son identité visuelle. Elle permet de donner une cohérence à la marque et à l'entreprise, en interne comme en externe (agences, partenaires, clients, médias).</p>
